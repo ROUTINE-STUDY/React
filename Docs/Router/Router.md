@@ -41,8 +41,8 @@ function App() {
   return (
     <BrowserRouter>
       <Route path='/' component={Home} />
-      <Route path='/Info' component={Info} />
-      <Route path='/About' component={About} />
+      <Route path='/info' component={Info} />
+      <Route path='/about' component={About} />
     </BrowserRouter>
   );
 }
@@ -53,11 +53,11 @@ export default App;
 ### 결과 확인
 
 1. 터미널에 npm start로 실행합니다.  
-![image](https://user-images.githubusercontent.com/74242937/125161274-5ae52500-e1bc-11eb-88c7-76ddf5d3652b.png)
-![image](https://user-images.githubusercontent.com/74242937/125161264-499c1880-e1bc-11eb-8aeb-a0e62261564e.png)
-![image](https://user-images.githubusercontent.com/74242937/125161267-502a9000-e1bc-11eb-929d-2da8e129fad0.png)
+![image](https://user-images.githubusercontent.com/74242937/125161722-d9db5d00-e1be-11eb-9796-463c13a21ca9.png)
+![image](https://user-images.githubusercontent.com/74242937/125161732-e52e8880-e1be-11eb-9d9e-3f7a63189aaa.png)
+![image](https://user-images.githubusercontent.com/74242937/125161727-e1026b00-e1be-11eb-9dc3-3fd7560d9256.png)
 
-- 주소에 localhost:3000/은 제대로 나오지만 --/Info와 --/About은 Home과 겹쳐서 나오게 됩니다. 그 이유는 Home의 path='/'가 Info와 About에도 겹치기 때문에 Home은 혼자서 표시하지만 나머지 Component들은 같이 표시하게 됩니다.
+- 주소에 localhost:3000/은 제대로 나오지만 --/info와 --/about은 Home과 겹쳐서 나오게 됩니다. 그 이유는 Home의 path='/'가 info와 about에도 겹치기 때문에 Home은 혼자서 표시하지만 나머지 Component들은 같이 표시하게 됩니다.
 
 <hr>
 
@@ -71,8 +71,8 @@ or
 ```js
 <Route path='/' exact={true} component={Home} />
 ```
-![image](https://user-images.githubusercontent.com/74242937/125161541-e4e1bd80-e1bd-11eb-8cf6-0ce24688920b.png)
-![image](https://user-images.githubusercontent.com/74242937/125161550-ead79e80-e1bd-11eb-8d69-1451bcea421b.png)
+![image](https://user-images.githubusercontent.com/74242937/125161709-cdef9b00-e1be-11eb-9f39-c2d9bb449ecc.png)
+![image](https://user-images.githubusercontent.com/74242937/125161707-c9c37d80-e1be-11eb-9498-a0b0a40f62d2.png)
 
 <hr>
 
