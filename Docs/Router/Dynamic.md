@@ -147,6 +147,7 @@ export default function About(props) {
 
 <hr>
 
+p.s 추후에 Hooks를 이용한 Dynamic Router를 작성하면 링크를 달도록 하겠습니다!!
 지금까지 간단한 Dynamic Router 사용법을 알아보았습니다. 틀린내용이 있다면 PR보내주시면 감사하겠습니다.
 
 <hr>
